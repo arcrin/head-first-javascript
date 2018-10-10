@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Free Variables Exercise</title>
+        <script>
+
+        // This code won't work because justSaying needs an environment
+        // to "close" its free variables.
+        function justSaying(phrase) {
+            if (beingFunny) {
+                ending = " -- I'm just saying!"
+            } else if (notSoMuch) {
+                ending = " -- Not so much."
+            }
+            alert(phrase + ending)
+        }
+        justSaying("Hey there!")
+        </script>
+    </head>
+</html>

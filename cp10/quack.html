@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>some js function</title>
+    <script>
+        // function declaration, this is evaluated first by the browser
+        quack(3) // this works because quack is created with function declaration
+        function quack(num) {
+            for (var i = 0; i < num; i++){
+                console.log("Quack!")
+            }
+        }
+
+        // fly(3), this doesn't work because function expressions are evaluated
+        // at runtime - when the code is executed,
+        // they are not treated the same as function declarations
+
+        var fly = function(num) { // function expression
+            for (var i = 0; i < num; i++){
+                console.log("Flop, Flop")
+            }
+        }
+
+    </script>
+</head>
+</html>

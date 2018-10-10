@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Extreme JavaScript Challenge</title>
+        <script>
+        var secret = "007"
+
+        function getSecret() {
+            var secret = "008"
+            function getValue() {
+                return secret
+            }
+            return getValue
+        }
+
+        var getValueFun = getSecret()
+        // var result = getValueFun()
+        console.log(getValueFun())
+        
+        </script>
+    </head>
+    <body></body>
+</html>

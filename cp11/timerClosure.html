@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Timer closure</title>
+        <script>
+        function makeTimer(doneMessage, n) {
+            setTimeout(function() {alert(doneMessage)}, n)
+            doneMessage = "whatever this is at the end of timer!" // the alert function takes a snpashot of doneMessage when the timer is up
+            doneMessage = "whatever"
+            doneMessage = "This is your final message" 
+        }
+        makeTimer("Cookies are done!", 1000)
+
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shell Game</title>
+        <script>
+        var winner = function() {alert("WINNER!")}
+        var loser = function() {alert("LOSER!")}
+        winner()
+
+        var a = winner
+        var b = loser
+        var c = loser
+
+        a() // winner
+        b() // loser
+
+        c = a
+        a = b
+        b = c
+        c = a
+        a = c
+        a = b 
+        b = c
+        a() // winner
+        </script>
+    </head>
+    <body></body>
+</html>

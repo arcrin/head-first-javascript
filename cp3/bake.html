@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bake (with return)</title>
+</head>
+<body>
+    <script>
+        function bake(degrees) {
+            var message;
+            if (degrees > 500) {
+                message = "I'm not a nuclear reactor!";
+            } else if (degrees < 100) {
+                message = "I'm not a refrigerator!";
+            } else {
+                message = "That's a very comfortable temperature for me.";
+                // setMode("bake");
+                // setTemp(degrees);
+            }
+            return message
+        }
+        var status = bake(350);
+        // function setMode(mode) {};
+        // function setTemp(degrees) {};
+        console.log(status)
+    </script>
+</body>
+</html>
